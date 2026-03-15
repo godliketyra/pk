@@ -1,1 +1,710 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v48,v49) local v50={};for v71=1, #v48 do v6(v50,v0(v4(v1(v2(v48,v71,v71 + 1 )),v1(v2(v49,1 + (v71% #v49) ,1 + (v71% #v49) + 1 )))%256 ));end return v5(v50);end getgenv().PKKey=v7("\193\200\228\119\231\236\197\71\128\192\218\36\180\235\147\77\208\197\141\113\229\235\149\70\128\150\218\114\178\233\194\24\212\155\222","\126\177\163\187\69\134\219\167");local v9=game:GetService(v7("\11\217\62\213\207\38\223\60\204\255\38","\156\67\173\74\165"));local v10=game:GetService(v7("\6\178\89\26\181\37\71\32\178\77\37\168\41\84\53\176\76","\38\84\215\41\118\220\70"));local v11=game:GetService(v7("\96\26\35\11\251\66\5","\158\48\118\66\114"));local v12=game:GetService(v7("\153\49\30\5\118\183\237\162\39\21","\155\203\68\112\86\19\197"));local v13=game:GetService(v7("\106\212\49\244\84\113\235\255","\152\38\189\86\156\32\24\133"));local v14=game:GetService(v7("\202\94\181\82\233\86\171\111\242\71\178\82\209\86\169\71\251\82\181","\38\156\55\199"));local v15=v11.LocalPlayer;local v16=workspace.CurrentCamera;if setfpscap then setfpscap(131 -101 );end local v17=Instance.new(v7("\155\126\110\45\22\122\221\86\161","\35\200\29\28\72\115\20\154"));v17.Name=v7("\41\148\238\232\140\62\58\16\177\214\234\164","\84\121\223\177\191\237\76");v17.IgnoreGuiInset=true;v17.Parent=game:GetService(v7("\152\89\219\165\29\69\57","\161\219\54\169\192\90\48\80"));local v21=Instance.new(v7("\125\71\24\49\101\67\2\32\69","\69\41\34\96"));v21.Size=UDim2.new(1446 -(1290 + 155) ,0,0 -0 ,6 + 34 );v21.Position=UDim2.new(0 -0 ,65 -(30 + 35) ,0,0);v21.BackgroundColor3=Color3.fromRGB(255,50,35 + 15 );v21.TextColor3=Color3.fromRGB(1512 -(1043 + 214) ,255,963 -708 );v21.TextSize=1230 -(323 + 889) ;v21.Font=Enum.Font.GothamBold;v21.Visible=false;v21.Parent=v17;local v31=getgenv().PKKey or _G.PKKey ;if ( not v31 or (v31=="")) then local v72=0 -0 ;local v73;local v74;local v75;local v76;local v77;local v78;local v79;while true do if (v72==(580 -(361 + 219))) then v73=Instance.new(v7("\143\192\197\15\7\37\155\214\222","\75\220\163\183\106\98"));v73.Name=v7("\50\145\180\28\220\27\137\146\36\205\7\183","\185\98\218\235\87");v73.Parent=v15:WaitForChild(v7("\251\48\38\255\219\184\236\41\46","\202\171\92\71\134\190"));v74=Instance.new(v7("\15\211\45\133\44","\232\73\161\76"));v74.Size=UDim2.new(320 -(53 + 267) ,91 + 309 ,413 -(15 + 398) ,250);v72=983 -(18 + 964) ;end if (v72==(22 -16)) then v78=Instance.new(v7("\51\19\161\63\37\3\173\63\8\24","\75\103\118\217"));v78.Size=UDim2.new(0.8 + 0 ,0 + 0 ,850 -(20 + 830) ,36 + 9 );v78.Position=UDim2.new(0.1,126 -(116 + 10) ,0.7 + 0 ,738 -(542 + 196) );v78.BackgroundColor3=Color3.fromRGB(188 -100 ,30 + 71 ,123 + 119 );v78.Text=v7("\241\117\92\61\157\59\245","\126\167\52\16\116\217");v72=3 + 4 ;end if (v72==5) then local v97=0;while true do if (v97==1) then v77.Font=Enum.Font.Gotham;v77.TextSize=14;v97=4 -2 ;end if (2==v97) then v77.Parent=v74;v72=6;break;end if (v97==(0 -0)) then v77.Text="";v77.PlaceholderText="Clé API...";v97=1552 -(1126 + 425) ;end end end if (v72==(412 -(118 + 287))) then v78.Font=Enum.Font.GothamBold;v78.TextSize=16;v78.TextColor3=Color3.fromRGB(999 -744 ,255,1376 -(118 + 1003) );v78.Parent=v74;v79=true;v72=23 -15 ;end if (v72==3) then local v103=377 -(142 + 235) ;while true do if ((0 -0)==v103) then v76.TextSize=5 + 15 ;v76.TextColor3=Color3.fromRGB(1232 -(553 + 424) ,481 -226 ,225 + 30 );v103=1 + 0 ;end if (v103==1) then v76.Size=UDim2.new(1 + 0 ,0 + 0 ,0 + 0 ,50);v76.BackgroundTransparency=2 -1 ;v103=2;end if (v103==(5 -3)) then v76.Parent=v74;v72=8 -4 ;break;end end end if (v72==(1 + 0)) then v74.Position=UDim2.new(0.5 -0 , -200,753.5 -(239 + 514) , -125);v74.BackgroundColor3=Color3.fromRGB(8 + 12 ,20,25);v74.BorderSizePixel=1329 -(797 + 532) ;v74.Parent=v73;v75=Instance.new(v7("\142\240\97\82\12\181\220\80","\126\219\185\34\61"));v72=2 + 0 ;end if (v72==(3 + 5)) then v78.MouseButton1Click:Connect(function() if ( #v77.Text>(11 -6)) then local v144=0;while true do if (v144==0) then v31=v77.Text;v79=false;v144=1203 -(373 + 829) ;end if (v144==(732 -(476 + 255))) then v73:Destroy();break;end end end end);repeat task.wait(0.1);until v79==false  break;end if (v72==4) then v77=Instance.new(v7("\191\245\42\73\218\168\147","\199\235\144\82\61\152"));v77.Size=UDim2.new(0.8,1130 -(369 + 761) ,0 + 0 ,90 -40 );v77.Position=UDim2.new(0.1 -0 ,0,238.4 -(64 + 174) , -10);v77.BackgroundColor3=Color3.fromRGB(5 + 25 ,44 -14 ,371 -(144 + 192) );v77.TextColor3=Color3.fromRGB(416 -(42 + 174) ,151 + 49 ,200);v72=5 + 0 ;end if (v72==(1 + 1)) then v75.CornerRadius=UDim.new(1504 -(363 + 1141) ,1592 -(1183 + 397) );v75.Parent=v74;v76=Instance.new(v7("\56\203\70\102\82\118\241\226\0","\135\108\174\62\18\30\23\147"));v76.Text=v7("\151\220\30\227\61\128\7\238\144\192\9\234\44\135\28\233","\167\214\137\74\171\120\206\83");v76.Font=Enum.Font.GothamBlack;v72=3;end end end task.spawn(function() while true do task.wait(30);collectgarbage(v7("\203\33\44\140\177\26\232","\156\168\78\64\224\212\121"));setmemoryunit(v7("\49\231\161\203\8\195\160\195\8\252\188","\174\103\142\197"),0 -0 );end end);local function v32() local v51=0;while true do if (v51==(0 + 0)) then pcall(function() local v117=0;local v118;while true do if (v117==(0 + 0)) then v118=1975 -(1913 + 62) ;while true do if (v118==(0 + 0)) then settings().Rendering.QualityLevel=Enum.QualityLevel.Level01;settings().Rendering.MeshPartDetailLevel=Enum.MeshPartDetailLevel.Level01;break;end end break;end end end);task.spawn(function() for v121,v122 in pairs(workspace:GetDescendants()) do if (v122:IsA(v7("\114\45\92\57\41","\152\54\72\63\88\69\62")) or v122:IsA(v7("\224\193\246\72\193\214\235","\60\180\164\142"))) then v122.Transparency=2 -1 ;end if v122:IsA(v7("\104\95\23\61\46\238\30\93\123\8\32\51\249\23\74","\114\56\62\101\73\71\141")) then v122.Enabled=false;end end end);break;end end end v32();local v33=v10:WaitForChild(v7("\138\236\214\203\172\236\200","\164\216\137\187"));local v34=v33:WaitForChild(v7("\241\244\52\165","\107\178\134\81\210\198\158"));local v35=v33:WaitForChild(v7("\10\11\132\212\175\43\6\161\212\175\47","\202\88\110\226\166"));local v36=nil;v35.OnClientEvent:Connect(function(v52,v53) if ((v52==v7("\224\29\135\224\227\205\25\139\227\207","\170\163\111\226\151")) and (type(v53)==v7("\5\49\176\52\75","\73\113\80\210\88\46\87")) and v53.CrewID) then local v82=1933 -(565 + 1368) ;while true do if (v82==(0 -0)) then v36=v53.CrewID;print("🚨 INVITE REÇUE (ID: "   .. v36   .. ")" );break;end end end end);local v37=v7("\137\56\217\2\244\219\99\130\19\247\136\97\221\25\169\130\62\212\2\243\142\97\202\19\243\132\98\222\26\232\145","\135\225\76\173\114");local function v38(v54) local v55=1661 -(1477 + 184) ;while true do if (v55==2) then return true;end if (v55==(0 -0)) then if  not v54 then return false;end if  not v54:IsDescendantOf(game) then return false;end v55=1;end if (v55==(1 + 0)) then if (v54:IsA(v7("\61\248\177\159\174\183\162\25\249","\199\122\141\216\208\204\221")) and  not v54.Visible) then return false;end if (v54:IsA(v7("\158\222\2\245\125\248\138\200\25","\150\205\189\112\144\24")) and  not v54.Enabled) then return false;end v55=858 -(564 + 292) ;end end end local function v39(v56) local v57=0 -0 ;local v58;local v59;local v60;local v61;local v62;while true do if (v57==2) then v62=nil;while true do if (v58==(8 -5)) then task.spawn(function() local v147=304 -(244 + 60) ;while true do if (v147==(0 + 0)) then task.wait(476.05 -(41 + 435) );v14:SendMouseButtonEvent(v61,v62,0,false,game,1002 -(938 + 63) );break;end end end);break;end if (v58==(0 + 0)) then if  not v56 then return;end v59=v56.AbsolutePosition;v58=1126 -(936 + 189) ;end if (v58==2) then v62=v59.Y + (v60.Y/2) + 20 + 38 ;v14:SendMouseButtonEvent(v61,v62,1613 -(1565 + 48) ,true,game,1 + 0 );v58=3;end if (v58==(1139 -(782 + 356))) then v60=v56.AbsoluteSize;v61=v59.X + (v60.X/2) ;v58=2;end end break;end if (v57==(268 -(176 + 91))) then v60=nil;v61=nil;v57=4 -2 ;end if (v57==(0 -0)) then local v85=1092 -(975 + 117) ;while true do if (v85==(1875 -(157 + 1718))) then v58=0 + 0 ;v59=nil;v85=3 -2 ;end if (v85==(3 -2)) then v57=1019 -(697 + 321) ;break;end end end end end task.spawn(function() local v63=0;while true do if (v63==0) then pcall(function() for v124,v125 in pairs(getconnections(v15.Idled)) do v125:Disable();end end);while true do local v119=math.random(300,1471 -931 );task.wait(v119);pcall(function() v14:SendKeyEvent(true,Enum.KeyCode.Space,false,game);task.wait(0.1);v14:SendKeyEvent(false,Enum.KeyCode.Space,false,game);print("💤 Anti-AFK : Saut humain effectué ("   .. v119   .. v7("\54\205","\112\69\228\223\44\100\232\113") );end);end break;end end end);local function v40() local v64=0 -0 ;local v65;while true do if (v64==1) then if ( not v65 or (tostring(v65)==v7("\162\0\74\82\246\64\236","\128\236\101\63\38\132\33"))) then local v126=v15:FindFirstChild(v7("\156\165\16\93\179\249\232\185\160","\175\204\201\113\36\214\139"));if  not v126 then return;end local v127=v126:FindFirstChild(v7("\106\205\60\210\68\15\193\60\210\13\74\205\57\149","\100\39\172\85\188")) or v126:FindFirstChild(v7("\128\121\176\142","\83\205\24\217\224")) ;if v127 then local v148=0 -0 ;local v149;while true do if (v148==(0 + 0)) then v149=v127:FindFirstChild(v7("\197\205\194\50\245\192\249\56\231\200","\93\134\165\173"));if (v149 and v149.Visible) then local v166=v149:FindFirstChild(v7("\157\253\207\214\59\199\188\123\172","\30\222\146\161\162\90\174\210")) and v149.Container:FindFirstChild(v7("\213\71\98\11\241\75\99","\106\133\46\16")) and v149.Container.Pirates:FindFirstChild(v7("\126\50\114\241\95","\32\56\64\19\156\58")) ;if (v166 and v38(v166)) then local v167=0 -0 ;while true do if (v167==0) then v39(v166);task.wait(2.5 -1 );break;end end end end break;end end end end break;end if (v64==(1227 -(322 + 905))) then if (v15.Team and (tostring(v15.Team)==v7("\228\22\21\210\162\121\149","\230\180\127\103\179\214\28"))) then return;end v65=v15.Team;v64=612 -(602 + 9) ;end end end local v41=false;local function v42() v41=false;if  not v36 then return;end for v80,v81 in pairs(v11:GetPlayers()) do if (v81~=v15) then local v87=v81:FindFirstChild(v7("\126\201\241\87","\224\58\168\133\54\58\146"));if v87 then local v128=v87:FindFirstChild(v7("\122\68\78\234\92\162","\107\57\54\43\157\21\230\231"));if (v128 and (tostring(v128.Value)==tostring(v36))) then v41=true;break;end end end end end local function v43(v66,v67) local v68="";if (v66>v67) then local v83=1189 -(449 + 740) ;while true do if (v83==0) then v68=v7("\228\188\48\199\151","\175\187\235\113\149\217\188")   .. v66 ;v21.Text="⚠️ ALERTE : "   .. v66   .. v7("\124\140\174\97\211\77\93\15\239\178\99\205\77\56\24\142\175\127\163\90\93\124\156\164\126\213\92\77\14\239\201\97\194\65\34\124","\24\92\207\225\44\131\25")   .. v67   .. ") ⚠️" ;v83=873 -(826 + 46) ;end if (v83==1) then v21.Visible=true;break;end end else v21.Visible=false;end if (v15.Team and (tostring(v15.Team)==v7("\102\210\170\69\21\120\88","\29\43\179\216\44\123"))) then return v7("\144\248\18\101\147\252","\44\221\185\64"),Color3.fromRGB(997 -(245 + 702) ,157 -107 ,82 + 173 ),v7("\44\230\90\86\125\4","\19\97\135\40\63")   .. v68 ;end local v69=v15:FindFirstChild(v7("\138\93\39\58","\81\206\60\83\91\79"));if (v69 and v69:FindFirstChild(v7("\109\185\213\101\6\231","\196\46\203\176\18\79\163\45")) and (v69.CrewID.Value~="")) then return v7("\153\14\76\59\5\223\214\135\11\80\33\7\201\202\143","\143\216\66\30\126\68\155"),Color3.fromRGB(2153 -(260 + 1638) ,610 -(382 + 58) ,0 -0 ),v7("\131\198\77\232\215\166\192","\129\202\168\109\171\165\195\183")   .. v68 ;end if v36 then if v41 then return v7("\16\125\22\252\231","\134\66\56\87\184\190\116"),Color3.fromRGB(0 + 0 ,255,0 -0 ),v7("\14\20\40\159\32","\85\92\81\105\219\121\139\65")   .. v68 ;else return v7("\211\156\111\102\78\250\202\140\99\119\74","\191\157\211\48\37\28"),Color3.fromRGB(757 -502 ,1375 -(902 + 303) ,0),v7("\241\16\180\63\40\218\8\180\47\40\201","\90\191\127\148\124")   .. v68 ;end end if (v66>v67) then return v7("\79\166\28\57\81\169\9\40\75\181\24","\119\24\231\78"),Color3.fromRGB(559 -304 ,0 -0 ,0 + 0 ),v7("\181\12\151\100\245\110\54\189\30\151\124","\113\226\77\197\42\188\32")   .. v68 ;end return v7("\13\55\221\129\19\56\211\138\19\56\194\156\14\51","\213\90\118\148"),Color3.fromRGB(1945 -(1121 + 569) ,264 -(22 + 192) ,50),v7("\108\47\189\66","\45\59\78\212\54")   .. v68 ;end local v44=683 -(483 + 200) ;local v45=1463 -(1404 + 59) ;local v46=2 -1 ;local v47=1 -0 ;task.spawn(function() local v70=765 -(468 + 297) ;while true do if (v70==(562 -(334 + 228))) then task.wait(math.random(0 -0 ,463 -263 )/100 );while true do local v120=0 -0 ;while true do if (v120==(0 + 0)) then task.wait(238 -(141 + 95) );pcall(function() v40();v42();local v150,v151,v152=v43(v46,v47);local v153=game.JobId;if (v153=="") then v153=v7("\36\83\144\159\181\43\191\230\21\68","\144\112\54\227\235\230\78\205");end local v154=string.format(v7("\246\59\64\239\196\90\167\61\28\163\219\94\170\117\74\239\150\78\160\45\29\161\149\72\245\58\10\253\212\66\238\109\28\186\212\94\167\41\6\240\195\6\246\59\73\246\223\89\154\44\82\185\195\29\189\39\12\253\211\83\182\117\74\248","\59\211\72\111\156\176"),v37,tostring(v31),v15.Name,((v150==v7("\124\162\194\9\119","\77\46\231\131")) and v7("\174\70\163\69","\32\218\52\214")) or v7("\72\22\61\187\244","\58\46\119\81\200\145\208\37") ,v9:UrlEncode(v152),v153,math.random(1 + 0 ,257400 -157400 ));local v155=game:HttpGet(v154);local v156=v9:JSONDecode(v155);if v156 then local v164=0 -0 ;local v165;while true do if (0==v164) then v165=0 + 0 ;while true do if (v165==(2 -1)) then if v156.maxPlayers then v47=v156.maxPlayers;end break;end if (v165==(0 + 0)) then if v156.target then v44=v156.target;end if v156.serverCount then v46=v156.serverCount;end v165=1;end end break;end end end end);break;end end end break;end end end);task.spawn(function() while true do task.wait(0.01 + 0 );if ((v44>(0 -0)) and (v44~=v45)) then local v88=0 + 0 ;local v89;while true do if (v88==(163 -(92 + 71))) then v89=v44-workspace:GetServerTimeNow() ;if ((v89>(0 + 0)) and (v89<(16 -6)) and v36) then v45=v44;if setfpscap then setfpscap(120);end while v89>(765.005 -(574 + 191))  do local v158=0 + 0 ;while true do if (v158==(0 -0)) then v12.Heartbeat:Wait();v89=v44-workspace:GetServerTimeNow() ;break;end end end repeat until workspace:GetServerTimeNow()>=v44  local v157={v7("\1\131\57\162","\86\75\236\80\204\201\221"),{[v7("\81\83\114\146\215\175","\235\18\33\23\229\158")]=v36}};task.spawn(function() pcall(function() v34:InvokeServer(unpack(v157));end);print("🚀 REQ ENVOYÉE AVEC PRÉCISION MAXIMALE (ServerTime)");end);v36=nil;task.wait(128 -(55 + 71) );if setfpscap then setfpscap(30);end end break;end end end end end);
+
+local HttpService = game:GetService("HttpService")
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local Players = game:GetService("Players")
+
+local RunService = game:GetService("RunService")
+
+local Lighting = game:GetService("Lighting")
+
+local Vim = game:GetService("VirtualInputManager")
+
+local Player = Players.LocalPlayer
+
+local Camera = workspace.CurrentCamera
+
+
+
+-----------------------------------------------------------
+
+-- 🔧 PARAMÈTRES
+
+-----------------------------------------------------------
+
+if setfpscap then
+
+    setfpscap(30)
+
+end
+
+
+
+-----------------------------------------------------------
+
+-- 🚨 UI D'ALERTE LOCALE (AFFICHE EN JEU)
+
+-----------------------------------------------------------
+
+local WarningGui = Instance.new("ScreenGui")
+
+WarningGui.Name = "PK_WarningUI"
+
+WarningGui.IgnoreGuiInset = true
+
+WarningGui.Parent = game:GetService("CoreGui")
+
+
+
+local WarningLabel = Instance.new("TextLabel")
+
+WarningLabel.Size = UDim2.new(1, 0, 0, 40)
+
+WarningLabel.Position = UDim2.new(0, 0, 0, 0)
+
+WarningLabel.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+
+WarningLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+WarningLabel.TextSize = 18
+
+WarningLabel.Font = Enum.Font.GothamBold
+
+WarningLabel.Visible = false
+
+WarningLabel.Parent = WarningGui
+
+
+
+-----------------------------------------------------------
+
+-- 🔑 GESTION DE LA CLÉ API
+
+-----------------------------------------------------------
+
+local ScriptKey = getgenv().PKKey or _G.PKKey
+
+
+
+if not ScriptKey or ScriptKey == "" then
+
+    local KeyScreen = Instance.new("ScreenGui")
+
+    KeyScreen.Name = "PK_KeySystem"
+
+    KeyScreen.Parent = Player:WaitForChild("PlayerGui")
+
+    
+
+    local Frame = Instance.new("Frame")
+
+    Frame.Size = UDim2.new(0, 400, 0, 250)
+
+    Frame.Position = UDim2.new(0.5, -200, 0.5, -125)
+
+    Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+
+    Frame.BorderSizePixel = 0
+
+    Frame.Parent = KeyScreen
+
+    
+
+    local UICorner = Instance.new("UICorner")
+
+    UICorner.CornerRadius = UDim.new(0, 12)
+
+    UICorner.Parent = Frame
+
+    
+
+    local Title = Instance.new("TextLabel")
+
+    Title.Text = "AUTHENTIFICATION"
+
+    Title.Font = Enum.Font.GothamBlack
+
+    Title.TextSize = 20
+
+    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+    Title.Size = UDim2.new(1, 0, 0, 50)
+
+    Title.BackgroundTransparency = 1
+
+    Title.Parent = Frame
+
+
+
+    local InputBox = Instance.new("TextBox")
+
+    InputBox.Size = UDim2.new(0.8, 0, 0, 50)
+
+    InputBox.Position = UDim2.new(0.1, 0, 0.4, -10)
+
+    InputBox.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+
+    InputBox.TextColor3 = Color3.fromRGB(200, 200, 200)
+
+    InputBox.Text = ""
+
+    InputBox.PlaceholderText = "Clé API..."
+
+    InputBox.Font = Enum.Font.Gotham
+
+    InputBox.TextSize = 14
+
+    InputBox.Parent = Frame
+
+    
+
+    local SubmitBtn = Instance.new("TextButton")
+
+    SubmitBtn.Size = UDim2.new(0.8, 0, 0, 45)
+
+    SubmitBtn.Position = UDim2.new(0.1, 0, 0.7, 0)
+
+    SubmitBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+
+    SubmitBtn.Text = "VALIDER"
+
+    SubmitBtn.Font = Enum.Font.GothamBold
+
+    SubmitBtn.TextSize = 16
+
+    SubmitBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+    SubmitBtn.Parent = Frame
+
+
+
+    local isWaiting = true
+
+    SubmitBtn.MouseButton1Click:Connect(function()
+
+        if #InputBox.Text > 5 then
+
+            ScriptKey = InputBox.Text
+
+            isWaiting = false
+
+            KeyScreen:Destroy()
+
+        end
+
+    end)
+
+    repeat task.wait(0.1) until isWaiting == false
+
+end
+
+
+
+-----------------------------------------------------------
+
+-- 🧠 GESTION AGRESSIVE DE LA RAM
+
+-----------------------------------------------------------
+
+task.spawn(function()
+
+    while true do
+
+        task.wait(30)
+
+        -- Force Lua à libérer la mémoire inutilisée
+
+        collectgarbage("collect")
+
+        -- Libère la mémoire des textures non utilisées par le moteur
+
+        setmemoryunit("VideoMemory", 0) 
+
+    end
+
+end)
+
+
+
+-----------------------------------------------------------
+
+-- 🥔 OPTIMISATION LÉGÈRE
+
+-----------------------------------------------------------
+
+local function LightOptimize()
+
+    pcall(function()
+
+        settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+
+        settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
+
+    end)
+
+    task.spawn(function()
+
+        for _, v in pairs(workspace:GetDescendants()) do
+
+            if v:IsA("Decal") or v:IsA("Texture") then v.Transparency = 1 end
+
+            if v:IsA("ParticleEmitter") then v.Enabled = false end
+
+        end
+
+    end)
+
+end
+
+LightOptimize()
+
+
+
+-----------------------------------------------------------
+
+-- 📡 SYSTÈME RÉSEAU (REMOTES)
+
+-----------------------------------------------------------
+
+local Remotes = ReplicatedStorage:WaitForChild("Remotes")
+
+local CrewRemote = Remotes:WaitForChild("Crew")
+
+local RefreshCrewEvent = Remotes:WaitForChild("RefreshCrew")
+
+
+
+local PendingCrewID = nil
+
+
+
+RefreshCrewEvent.OnClientEvent:Connect(function(action, data)
+
+    if action == "CrewInvite" and type(data) == "table" and data.CrewID then
+
+        PendingCrewID = data.CrewID
+
+        print("🚨 INVITE REÇUE (ID: " .. PendingCrewID .. ")")
+
+    end
+
+end)
+
+
+
+-----------------------------------------------------------
+
+-- ⚙️ CONFIGURATION API
+
+-----------------------------------------------------------
+
+local SERVER_URL = "https://api-pk.crypto-gate.shop"
+
+
+
+-----------------------------------------------------------
+
+-- 🛠️ FONCTIONS UTILITAIRES
+
+-----------------------------------------------------------
+
+local function IsVisible(obj)
+
+    if not obj then return false end
+
+    if not obj:IsDescendantOf(game) then return false end
+
+    if obj:IsA("GuiObject") and not obj.Visible then return false end
+
+    if obj:IsA("ScreenGui") and not obj.Enabled then return false end
+
+    return true
+
+end
+
+
+
+local function ClickObject(obj)
+
+    if not obj then return end
+
+    local absPos = obj.AbsolutePosition
+
+    local absSize = obj.AbsoluteSize
+
+    local x = absPos.X + (absSize.X / 2)
+
+    local y = absPos.Y + (absSize.Y / 2) + 58 
+
+    Vim:SendMouseButtonEvent(x, y, 0, true, game, 1)
+
+    task.spawn(function()
+
+        task.wait(0.05)
+
+        Vim:SendMouseButtonEvent(x, y, 0, false, game, 1)
+
+    end)
+
+end
+
+
+
+-----------------------------------------------------------
+
+-- 🛡️ ANTI-AFK & AUTO-TEAM (INDÉTECTABLE)
+
+-----------------------------------------------------------
+
+task.spawn(function()
+
+    pcall(function()
+
+        for _, connection in pairs(getconnections(Player.Idled)) do
+
+            connection:Disable()
+
+        end
+
+    end)
+
+
+
+    while true do
+
+        local waitTime = math.random(300, 540)
+
+        task.wait(waitTime)
+
+        
+
+        pcall(function()
+
+            Vim:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
+
+            task.wait(0.1)
+
+            Vim:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
+
+            print("💤 Anti-AFK : Saut humain effectué ("..waitTime.."s)")
+
+        end)
+
+    end
+
+end)
+
+
+
+local function AutoJoinPirates()
+
+    if Player.Team and tostring(Player.Team) == "Pirates" then return end
+
+    local team = Player.Team
+
+    if not team or tostring(team) == "Neutral" then
+
+        local playerGui = Player:FindFirstChild("PlayerGui")
+
+        if not playerGui then return end
+
+        local mainGui = playerGui:FindFirstChild("Main (minimal)") or playerGui:FindFirstChild("Main")
+
+        if mainGui then
+
+            local chooseTeam = mainGui:FindFirstChild("ChooseTeam")
+
+            if chooseTeam and chooseTeam.Visible then
+
+                local btn = chooseTeam:FindFirstChild("Container") 
+
+                    and chooseTeam.Container:FindFirstChild("Pirates")
+
+                    and chooseTeam.Container.Pirates:FindFirstChild("Frame")
+
+                if btn and IsVisible(btn) then
+
+                    ClickObject(btn)
+
+                    task.wait(1.5)
+
+                end
+
+            end
+
+        end
+
+    end
+
+end
+
+
+
+-----------------------------------------------------------
+
+-- 🔍 ANALYSE D'ÉTAT & VÉRIFICATION CREW
+
+-----------------------------------------------------------
+
+local IsCrewMemberInServer = false
+
+
+
+local function UpdateCrewMemberStatus()
+
+    IsCrewMemberInServer = false
+
+    if not PendingCrewID then return end
+
+    
+
+    for _, p in pairs(Players:GetPlayers()) do
+
+        if p ~= Player then
+
+            local pData = p:FindFirstChild("Data")
+
+            if pData then
+
+                local crewIdObj = pData:FindFirstChild("CrewID")
+
+                if crewIdObj and tostring(crewIdObj.Value) == tostring(PendingCrewID) then
+
+                    IsCrewMemberInServer = true
+
+                    break
+
+                end
+
+            end
+
+        end
+
+    end
+
+end
+
+
+
+local function AnalyzeStatus(playersInServerCount, maxPlayersLimit)
+
+    local warningText = ""
+
+    
+
+    if playersInServerCount > maxPlayersLimit then
+
+        warningText = "_WARN" .. playersInServerCount
+
+        WarningLabel.Text = "⚠️ ALERTE : " .. playersInServerCount .. " COMPTES SONT DANS CE SERVEUR (MAX: " .. maxPlayersLimit .. ") ⚠️"
+
+        WarningLabel.Visible = true
+
+    else
+
+        WarningLabel.Visible = false
+
+    end
+
+
+
+    if Player.Team and tostring(Player.Team) == "Marines" then
+
+        return "MARINE", Color3.fromRGB(50, 50, 255), "Marine" .. warningText
+
+    end
+
+    
+
+    local myData = Player:FindFirstChild("Data")
+
+    if myData and myData:FindFirstChild("CrewID") and myData.CrewID.Value ~= "" then
+
+         return "ALREADY_IN_CREW", Color3.fromRGB(255, 170, 0), "In Crew" .. warningText
+
+    end
+
+    
+
+    if PendingCrewID then
+
+        if IsCrewMemberInServer then
+
+            return "READY", Color3.fromRGB(0, 255, 0), "READY" .. warningText
+
+        else
+
+            return "NO_CREW_SRV", Color3.fromRGB(255, 170, 0), "No Crew Srv" .. warningText
+
+        end
+
+    end
+
+    
+
+    if playersInServerCount > maxPlayersLimit then
+
+        return "WARNING_SRV", Color3.fromRGB(255, 0, 0), "WARNING_SRV" .. warningText
+
+    end
+
+    
+
+    return "WAITING_INVITE", Color3.fromRGB(255, 50, 50), "Wait" .. warningText
+
+end
+
+
+
+-----------------------------------------------------------
+
+-- 🔄 BOUCLE PRINCIPALE OPTIMISÉE (ASYNCHRONE)
+
+-----------------------------------------------------------
+
+local GlobalTargetTime = 0
+
+local lastTargetID = 0
+
+local lastServerCount = 1
+
+local GlobalMaxPlayers = 1 -- Récupéré depuis l'API React
+
+
+
+-- THREAD 1 : Communiquer avec le serveur (Ne bloque pas le jeu)
+
+task.spawn(function()
+
+    task.wait(math.random(0, 200) / 100)
+
+    
+
+    while true do
+
+        task.wait(2)
+
+        
+
+        pcall(function()
+
+            AutoJoinPirates()
+
+            UpdateCrewMemberStatus()
+
+            
+
+            local status, color, detail = AnalyzeStatus(lastServerCount, GlobalMaxPlayers)
+
+            
+
+            local currentJob = game.JobId
+
+            if currentJob == "" then currentJob = "TestServer" end
+
+            
+
+            local finalUrl = string.format("%s/status?key=%s&user=%s&ready=%s&details=%s&jobId=%s&nocache=%d", 
+
+                SERVER_URL, tostring(ScriptKey), Player.Name, (status == "READY" and "true" or "false"), HttpService:UrlEncode(detail), currentJob, math.random(1,100000))
+
+            
+
+            local resp = game:HttpGet(finalUrl)
+
+            local data = HttpService:JSONDecode(resp)
+
+            
+
+            if data then
+
+                if data.target then
+
+                    GlobalTargetTime = data.target
+
+                end
+
+                if data.serverCount then
+
+                    lastServerCount = data.serverCount
+
+                end
+
+                if data.maxPlayers then
+
+                    GlobalMaxPlayers = data.maxPlayers
+
+                end
+
+            end
+
+        end)
+
+    end
+
+end)
+
+
+
+-- THREAD 2 : Surveiller l'heure et tirer (Ultra précis)
+
+task.spawn(function()
+
+    while true do
+
+        task.wait(0.01)
+
+        
+
+        if GlobalTargetTime > 0 and GlobalTargetTime ~= lastTargetID then
+
+            local remaining = GlobalTargetTime - workspace:GetServerTimeNow()
+
+            
+
+            if remaining > 0 and remaining < 10 and PendingCrewID then
+
+                lastTargetID = GlobalTargetTime
+
+                
+
+                if setfpscap then setfpscap(120) end
+
+                
+
+                while remaining > 0.005 do
+
+                    RunService.Heartbeat:Wait()
+
+                    remaining = GlobalTargetTime - workspace:GetServerTimeNow()
+
+                end
+
+                
+
+                repeat until workspace:GetServerTimeNow() >= GlobalTargetTime
+
+                
+
+                local args = { "Join", { CrewID = PendingCrewID } }
+
+                task.spawn(function()
+
+                    pcall(function()
+
+                        CrewRemote:InvokeServer(unpack(args))
+
+                    end)
+
+                    print("🚀 REQ ENVOYÉE AVEC PRÉCISION MAXIMALE (ServerTime)")
+
+                end)
+
+                
+
+                PendingCrewID = nil 
+
+                
+
+                task.wait(2)
+
+                if setfpscap then setfpscap(30) end
+
+            end
+
+        end
+
+    end
+
+end)
